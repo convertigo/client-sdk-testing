@@ -1,0 +1,22 @@
+↓Input_variables [steps.InputVariablesStep-1534928830256]: 
+↓Call_Transaction [steps.TransactionStep-1534844076208]: 
+  sourceTransaction: ClientSDKtesting.qa_fs_files.ResetDatabase
+↓Call_Transaction1 [steps.TransactionStep-1534844094797]: 
+  output: true
+  sourceTransaction: ClientSDKtesting.qa_fs_files.PostDocument
+  ↓_id [variables.StepVariable-1534844124069]: 
+    description: Document id
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1534928830256
+          - java.lang.String: 
+            - ↑value: ./_id/text()
+    value: documentFile
+↓_id [variables.RequestableVariable-1534928794953]: 
+  value: 
+↓Test_Case [core.TestCase]: 
+  ↓_id [variables.TestCaseVariable-1534928954349]: 
+    value: documentFile

@@ -1,0 +1,91 @@
+↓Call_Transaction3 [steps.TransactionStep-1456394672130]: 
+  sourceTransaction: ClientSDKtesting.qa_fs_pull.Reset
+↓ids1 [steps.XMLComplexStep-1455893021369]: 
+  nodeName: ids
+  output: false
+  ↓id [steps.XMLElementStep-1455893021385]: 
+    nodeName: id
+    nodeText: 147
+    output: false
+  ↓id1 [steps.XMLElementStep-1455893021391]: 
+    nodeName: id
+    nodeText: 258
+    output: false
+  ↓id2 [steps.XMLElementStep-1455893021398]: 
+    nodeName: id
+    nodeText: 369
+    output: false
+↓Remove_authenticated_user1 [steps.RemoveAuthenticatedUserStep-1455893050100]: 
+↓Call_Transaction11 [steps.TransactionStep-1455893044217]: 
+  sourceTransaction: ClientSDKtesting.qa_fs_pull.CreateAll
+  ↓_id [variables.StepMultiValuedVariable-1455893044227]: 
+    description: Document ids
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1455893021369
+          - java.lang.String: 
+            - ↑value: ./id/text()
+  ↓data [variables.StepMultiValuedVariable-1455893044237]: 
+    description: Documents contents
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1455893021369
+          - java.lang.String: 
+            - ↑value: ./id/text()
+↓ids [steps.XMLComplexStep-1455875825288]: 
+  nodeName: ids
+  output: false
+  ↓id [steps.XMLElementStep-1455875839834]: 
+    nodeName: id
+    nodeText: 123
+    output: false
+  ↓id1 [steps.XMLElementStep-1455875858460]: 
+    nodeName: id
+    nodeText: 456
+    output: false
+  ↓id2 [steps.XMLElementStep-1455875859642]: 
+    nodeName: id
+    nodeText: 789
+    output: false
+↓Set_authenticated_user [steps.SetAuthenticatedUserStep-1455876100795]: 
+  userid: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: testing_user
+↓Call_Transaction1 [steps.TransactionStep-1455876142822]: 
+  sourceTransaction: ClientSDKtesting.qa_fs_pull.CreateAll
+  ↓_id [variables.StepMultiValuedVariable-1455876142824]: 
+    description: Document ids
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1455875825288
+          - java.lang.String: 
+            - ↑value: ./id/text()
+  ↓data [variables.StepMultiValuedVariable-1455876142826]: 
+    description: Documents contents
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1455875825288
+          - java.lang.String: 
+            - ↑value: ./id/text()
+↓Remove_authenticated_user [steps.RemoveAuthenticatedUserStep-1455876122002]: 
+↓Element [steps.XMLElementStep-1455894272595]: 
+  nodeName: ok
+  nodeText: true
+  ↓Attribute [steps.XMLAttributeStep-1455894315392]: 
+    nodeName: type
+    nodeText: boolean

@@ -1,0 +1,11 @@
+↓Remove_authenticated_user1 [steps.RemoveAuthenticatedUserStep-1456394818432]: 
+↓Call_Transaction [steps.TransactionStep-1456394798641]: 
+  sourceTransaction: ClientSDKtesting.qa_fs_push.Reset
+↓Call_Transaction1 [steps.TransactionStep-1456394811143]: 
+  sourceTransaction: ClientSDKtesting.qa_fs_push.Init
+↓Element [steps.XMLElementStep-1456394841796]: 
+  nodeName: ok
+  nodeText: true
+  ↓Attribute [steps.XMLAttributeStep-1456394841801]: 
+    nodeName: type
+    nodeText: boolean

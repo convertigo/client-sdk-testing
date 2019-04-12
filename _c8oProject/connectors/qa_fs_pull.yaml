@@ -1,0 +1,33 @@
+↑default: true
+databaseName: qa_fs_pull
+↓AllDocs [transactions.couchdb.CustomTransaction]: 
+  subUrl: '"/_all_docs?endkey=%22_%22"'
+↓Compact [transactions.couchdb.CustomTransaction]: 
+  httpData: '""'
+  httpVerb: POST
+  subUrl: '"/_compact"'
+↓CreateAll [transactions.couchdb.PostBulkDocumentsTransaction]: 
+  p_json_base: '{"type":"doc"}'
+  ↓_id [variables.RequestableMultiValuedVariable-1455892937069]: 
+    description: Document ids
+  ↓data [variables.RequestableMultiValuedVariable-1455892937074]: 
+    description: Documents contents
+↓DeleteAll [transactions.couchdb.PostBulkDocumentsTransaction]: 
+  p_json_base: '{"_deleted": true}'
+  ↓_id [variables.RequestableMultiValuedVariable-1455892937085]: 
+    description: Document ids
+  ↓_rev [variables.RequestableMultiValuedVariable-1455893871721]: 
+    description: Documents revisions
+↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
+  ↑default: true
+↓Reset [transactions.couchdb.CustomTransaction]: 
+  httpVerb: DELETE
+  handlers: 
+    →: |
+      'function onXmlGenerated() {
+        com.twinsoft.convertigo.engine.providers.couchdb.CouchDbManager.syncDocument(context.connector);
+      }
+      '
+↓design [couchdb.DesignDocument]: 
+  docdata: 
+    →: '{"_id":"_design\/design","filters":{},"updates":{},"views":{"reverse":{"map":"function (doc) {\r\n\ttry {\r\n\t\temit(doc._id.split(\"\").reverse().join(\"\"), doc.data * 1);\r\n\t} catch (err) {\r\n\t\tlog(err.message);\r\n\t}\r\n}","reduce":"_sum"},"array":{"map":"function (doc) {\r\n\ttry {\r\n\t\temit([\"\" + (doc._id[0] % 2), \"\" + (doc._id[1] % 3), doc._id], doc.data * 1);\r\n\t} catch (err) {\r\n\t\tlog(err.message);\r\n\t}\r\n}"}}}'

@@ -1,0 +1,21 @@
+databaseName: qa_fs_files
+↓DeleteDocument [transactions.couchdb.DeleteDocumentTransaction]: 
+  ↓_use_docid [variables.RequestableVariable-1534843932440]: 
+    description: Document ID
+↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
+  ↑default: true
+↓PostDocument [transactions.couchdb.PostDocumentTransaction]: 
+  fullSyncAclPolicy: fromKeyC8oAcl
+  p_json_base: '{"type":"doc"}'
+  policy: override
+  ↓_id [variables.RequestableVariable-1534929057198]: 
+    description: Document id
+↓PutDocumentAttachment [transactions.couchdb.PutDocumentAttachmentTransaction]: 
+  ↓_use_attname [variables.RequestableVariable-1534843889789]: 
+    description: Attachment name
+  ↓_use_attpath [variables.RequestableVariable-1534843889791]: 
+    description: Attachment path | This path is either absolute or relative to Convertigo environment. Relative paths starting with:<br/><br/>• <span class="computer">./</span> are relative to Convertigo workspace,<br/>• <span class="computer">.//</span> are relative to current project folder. <br/><br/>
+  ↓_use_docid [variables.RequestableVariable-1534843889793]: 
+    description: Document ID
+↓ResetDatabase [transactions.couchdb.ResetDatabaseTransaction]: 
+  accessibility: Hidden

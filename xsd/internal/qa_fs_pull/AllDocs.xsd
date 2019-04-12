@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ClientSDKtesting_ns="http://www.convertigo.com/convertigo/projects/ClientSDKtesting" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.convertigo.com/convertigo/projects/ClientSDKtesting">
+    <xsd:element name="qa_fs_pull__AllDocs" type="ClientSDKtesting_ns:qa_fs_pull__AllDocsRequestData">
+        <xsd:annotation/>
+    </xsd:element>
+    <xsd:element name="qa_fs_pull__AllDocsResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="response" type="ClientSDKtesting_ns:qa_fs_pull__AllDocsResponseData"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="qa_fs_pull__AllDocsResponseType">
+        <xsd:sequence>
+            <xsd:element name="document" type="ClientSDKtesting_ns:qa_fs_pull__AllDocsResponseData"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="qa_fs_pull__AllDocsRequestData">
+        <xsd:sequence/>
+    </xsd:complexType>
+    <xsd:complexType name="client_sdk_testing_fullsync_AllDocs_document_couchdb_output__c8oMeta_headersType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Cache_Control" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="Content_Type" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="Date" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ETag" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="Server" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="Transfer_Encoding" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="client_sdk_testing_fullsync_AllDocs_document_couchdb_output__c8oMetaType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="headers" type="ClientSDKtesting_ns:client_sdk_testing_fullsync_AllDocs_document_couchdb_output__c8oMeta_headersType"/>
+            <xsd:element minOccurs="0" name="reasonPhrase" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="status" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="statusCode" type="xsd:short"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="client_sdk_testing_fullsync_AllDocs_document_couchdb_output_rows_item_valueType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="rev" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="client_sdk_testing_fullsync_AllDocs_document_couchdb_output_rows_itemType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="id" type="xsd:short"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="key" type="xsd:short"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="value" type="ClientSDKtesting_ns:client_sdk_testing_fullsync_AllDocs_document_couchdb_output_rows_item_valueType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="client_sdk_testing_fullsync_AllDocs_document_couchdb_output_rowsType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="ClientSDKtesting_ns:client_sdk_testing_fullsync_AllDocs_document_couchdb_output_rows_itemType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="client_sdk_testing_fullsync_AllDocs_document_couchdb_outputType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="_c8oMeta" type="ClientSDKtesting_ns:client_sdk_testing_fullsync_AllDocs_document_couchdb_output__c8oMetaType"/>
+            <xsd:element minOccurs="0" name="offset" type="xsd:byte"/>
+            <xsd:element minOccurs="0" name="rows" type="ClientSDKtesting_ns:client_sdk_testing_fullsync_AllDocs_document_couchdb_output_rowsType"/>
+            <xsd:element minOccurs="0" name="total_rows" type="xsd:byte"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="qa_fs_pull__AllDocsResponseData">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="couchdb_output" type="ClientSDKtesting_ns:client_sdk_testing_fullsync_AllDocs_document_couchdb_outputType"/>
+            <xsd:element minOccurs="0" name="error" type="ClientSDKtesting_ns:ConvertigoError"/>
+        </xsd:sequence>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="context" type="xsd:string"/>
+        <xsd:attribute name="contextId" type="xsd:string"/>
+        <xsd:attribute name="fromStub" type="xsd:boolean"/>
+        <xsd:attribute name="fromcache" type="xsd:boolean"/>
+        <xsd:attribute name="generated" type="xsd:string"/>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="signature" type="xsd:long"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="version" type="xsd:string"/>
+        <xsd:attribute name="screenclass" type="xsd:string"/>
+        <xsd:attribute name="userReference" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContextVariable">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="value" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoErrorContext">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="variable" type="ClientSDKtesting_ns:ConvertigoErrorContextVariable"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ConvertigoError">
+        <xsd:sequence minOccurs="0">
+            <xsd:element name="code" type="xsd:integer"/>
+            <xsd:element name="message" type="xsd:string"/>
+            <xsd:element name="details" type="xsd:string"/>
+            <xsd:element name="context" type="ClientSDKtesting_ns:ConvertigoErrorContext"/>
+            <xsd:element name="exception" type="xsd:string"/>
+            <xsd:element name="stacktrace" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="project" type="xsd:string"/>
+        <xsd:attribute name="connector" type="xsd:string"/>
+        <xsd:attribute name="transaction" type="xsd:string"/>
+        <xsd:attribute name="sequence" type="xsd:string"/>
+        <xsd:attribute name="type">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="c8o"/>
+                    <xsd:enumeration value="project"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>

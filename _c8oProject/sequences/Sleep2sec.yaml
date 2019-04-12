@@ -1,0 +1,5 @@
+accessibility: Hidden
+↓Sequence_JS [steps.SimpleStep-1455634305017]: 
+  expression: java.lang.Thread.sleep(20000);
+↓Element [steps.XMLElementStep-1455634381014]: 
+  nodeText: ok

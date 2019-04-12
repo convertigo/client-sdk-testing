@@ -1,0 +1,28 @@
+↑convertigo: 7.6.0.m006
+↓ClientSDKtesting [core.Project]: 
+  comment: Mashup Sequencer project
+  corsOrigin: =Origin
+  jsonRoot: docNode
+  version: 2.1.2
+  ↓digiprev_fullsync_dataref [connectors.FullSyncConnector]: 🗏 connectors/digiprev_fullsync_dataref.yaml
+  ↓qa_fs_files [connectors.FullSyncConnector]: 🗏 connectors/qa_fs_files.yaml
+  ↓qa_fs_pull [connectors.FullSyncConnector]: 🗏 connectors/qa_fs_pull.yaml
+  ↓qa_fs_push [connectors.FullSyncConnector]: 🗏 connectors/qa_fs_push.yaml
+  ↓GetAndInsertBase64 [sequences.GenericSequence]: 🗏 sequences/GetAndInsertBase64.yaml
+  ↓GetFromSession [sequences.GenericSequence]: 🗏 sequences/GetFromSession.yaml
+  ↓GetLogs [sequences.GenericSequence]: 🗏 sequences/GetLogs.yaml
+  ↓GetSizeAndDelete [sequences.GenericSequence]: 🗏 sequences/GetSizeAndDelete.yaml
+  ↓InitFsFile [sequences.GenericSequence]: 🗏 sequences/InitFsFile.yaml
+  ↓InitFsPull [sequences.GenericSequence]: 🗏 sequences/InitFsPull.yaml
+  ↓InitFsPush [sequences.GenericSequence]: 🗏 sequences/InitFsPush.yaml
+  ↓JsonTypes [sequences.GenericSequence]: 🗏 sequences/JsonTypes.yaml
+  ↓LoginTesting [sequences.GenericSequence]: 🗏 sequences/LoginTesting.yaml
+  ↓LogoutTesting [sequences.GenericSequence]: 🗏 sequences/LogoutTesting.yaml
+  ↓Ping [sequences.GenericSequence]: 🗏 sequences/Ping.yaml
+  ↓PrepareDownload4M [sequences.GenericSequence]: 🗏 sequences/PrepareDownload4M.yaml
+  ↓SetInSession [sequences.GenericSequence]: 🗏 sequences/SetInSession.yaml
+  ↓Sleep2sec [sequences.GenericSequence]: 🗏 sequences/Sleep2sec.yaml
+  ↓CouchDb_schema [references.ImportXsdSchemaReference]: 
+    urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd
+  ↓lib_FileTransfer_reference [references.ProjectSchemaReference]: 
+    projectName: lib_FileTransfer

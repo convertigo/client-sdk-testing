@@ -1,0 +1,13 @@
+↓Sequence_JS [steps.SimpleStep-1472032310211]: 
+  expression: |
+    'var file = new java.io.File(filepath);
+    var length = -1;
+    if (file.exists()) {
+    	length = file.length();
+    	file.delete();
+    	file.getParentFile().delete();
+    }'
+↓jElement [steps.ElementStep-1472032503574]: 
+  expression: length
+  nodeName: length
+↓filepath [variables.RequestableVariable-1472032285000]: 

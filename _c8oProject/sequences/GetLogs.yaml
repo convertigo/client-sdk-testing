@@ -1,0 +1,24 @@
+accessibility: Hidden
+↓Sequence_JS [steps.SimpleStep-1455545712304]: 
+  expression: |
+    'var logmanager = context.httpSession.getAttribute("ClientSDKtestingLogManager");
+    
+    if (logmanager == null || init) {
+      com.twinsoft.convertigo.engine.Engine.theApp.logDevices.setLevel(org.apache.log4j.Level.TRACE);
+      logmanager = new com.twinsoft.convertigo.engine.admin.logmanager.LogManager();
+      context.httpSession.setAttribute("ClientSDKtestingLogManager", logmanager);
+      logmanager.setDateStart(new java.util.Date());
+      logmanager.setFilter("category == ''Devices'' and message.contains(''" + init + "'')");
+      logmanager.setContinue(true);
+    }
+    
+    var lines = logmanager.getLines();
+    var doc = context.outputDocument;
+    var root = doc.getDocumentElement();
+    
+    for (var i = 0; i < lines.length(); i++) {
+      var line = doc.createElement("line"); 
+      line.setTextContent(lines.get(i));
+      root.appendChild(line);
+    }'
+↓init [variables.RequestableVariable-1455547366630]: 

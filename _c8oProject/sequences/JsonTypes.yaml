@@ -1,0 +1,48 @@
+accessibility: Hidden
+↓Input_variables [steps.InputVariablesStep-1455531645330]: 
+  nodeName: pong
+  output: true
+↓Complex [steps.XMLComplexStep-1455532719248]: 
+  ↓Attribute [steps.XMLAttributeStep-1455532730273]: 
+    nodeName: type
+    nodeText: object
+  ↓Element [steps.XMLElementStep-1455532752263]: 
+    nodeName: isNull
+    ↓Attribute [steps.XMLAttributeStep-1455531867362]: 
+      nodeName: type
+      nodeText: null
+  ↓Element1 [steps.XMLElementStep-1455532752422]: 
+    nodeName: isInt3615
+    nodeText: 3615
+    ↓Attribute [steps.XMLAttributeStep-1455531900525]: 
+      nodeName: type
+      nodeText: integer
+  ↓Element11 [steps.XMLElementStep-1455532752492]: 
+    nodeName: isStringWhere
+    nodeText: where is my string?!
+    ↓Attribute [steps.XMLAttributeStep-1455531985835]: 
+      nodeName: type
+      nodeText: string
+  ↓Element12 [steps.XMLElementStep-1455532752558]: 
+    nodeName: isDoublePI
+    nodeText: 3.141592653589793
+    ↓Attribute [steps.XMLAttributeStep-1455532037518]: 
+      nodeName: type
+      nodeText: double
+  ↓Element121 [steps.XMLElementStep-1455532752625]: 
+    nodeName: isBoolTrue
+    nodeText: true
+    ↓Attribute [steps.XMLAttributeStep-1455532100491]: 
+      nodeName: type
+      nodeText: boolean
+  ↓Element1211 [steps.XMLElementStep-1455532752692]: 
+    nodeName: isStringAccents
+    nodeText: that's ÉlŸz@
+    ↓Attribute [steps.XMLAttributeStep-1455532145218]: 
+      nodeName: type
+      nodeText: string
+    ↓Attribute1 [steps.XMLAttributeStep-1455532179759]: 
+      nodeName: originalKeyName
+      nodeText: ÉlŸz@-node
+↓var1 [variables.RequestableVariable-1455531654499]: 
+↓mvar1 [variables.RequestableMultiValuedVariable-1455531654505]: 

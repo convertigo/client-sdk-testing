@@ -1,0 +1,8 @@
+↓Set_authenticated_user [steps.SetAuthenticatedUserStep-1455876844132]: 
+  output: true
+  userid: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: testing_user

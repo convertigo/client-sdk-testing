@@ -1,0 +1,14 @@
+↓Call_Sequence [steps.SequenceStep-1472025393244]: 
+  sourceSequence: lib_FileTransfer.StoreLocalFileToDatabase
+  ↓filepath [variables.StepVariable-1472025393246]: 
+    value: .//../ClientSDKtesting/files/4m.jpg
+↓Element [steps.XMLElementStep-1472025482996]: 
+  nodeName: uuid
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1472025393244
+        - java.lang.String: 
+          - ↑value: ./document/sequence/document/uuid/text()

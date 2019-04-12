@@ -1,0 +1,26 @@
+databaseName: qa_fs_push
+↓AllDocs [transactions.couchdb.CustomTransaction]: 
+  subUrl: '"/_all_docs?startkey=%22" + startkey + "%22&endkey=%22" + endkey + "%22&include_docs=true"'
+  ↓startkey [variables.RequestableVariable-1456321291326]: 
+  ↓endkey [variables.RequestableVariable-1456321309820]: 
+↓GetDocument [transactions.couchdb.GetDocumentTransaction]: 
+  ↓_use_docid [variables.RequestableVariable-1456309161511]: 
+    description: Document ID
+↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
+  ↑default: true
+↓Init [transactions.couchdb.PostBulkDocumentsTransaction]: 
+  p_json_base: '[{"_id": "abc"}, {"_id": "def"}, {"_id": "ghi"}]'
+↓PostDocument [transactions.couchdb.PostDocumentTransaction]: 
+  policy: override
+  ↓_id [variables.RequestableVariable-1456329974365]: 
+    description: Document id
+  ↓custom [variables.RequestableVariable-1456329974367]: 
+    description: Document content
+↓Reset [transactions.couchdb.CustomTransaction]: 
+  httpVerb: DELETE
+  handlers: 
+    →: |
+      'function onXmlGenerated() {
+        com.twinsoft.convertigo.engine.providers.couchdb.CouchDbManager.syncDocument(context.connector);
+      }
+      '

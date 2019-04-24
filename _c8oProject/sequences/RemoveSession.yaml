@@ -1,0 +1,14 @@
+↓Remove_session [steps.RemoveSessionStep-1555083137320]: 
+↓Set_response_header [steps.SetResponseHeaderStep-1556099633830]: 
+  headerName: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: Set-Cookie
+  headerValue: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: JSESSIONID=deleted; path=/cems/; expires=Thu, 01 Jan 1970 00:00:00 GMT

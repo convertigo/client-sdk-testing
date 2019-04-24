@@ -20,6 +20,7 @@
   ↓LogoutTesting [sequences.GenericSequence]: 🗏 sequences/LogoutTesting.yaml
   ↓Ping [sequences.GenericSequence]: 🗏 sequences/Ping.yaml
   ↓PrepareDownload4M [sequences.GenericSequence]: 🗏 sequences/PrepareDownload4M.yaml
+  ↓RemoveSession [sequences.GenericSequence]: 🗏 sequences/RemoveSession.yaml
   ↓SetInSession [sequences.GenericSequence]: 🗏 sequences/SetInSession.yaml
   ↓Sleep2sec [sequences.GenericSequence]: 🗏 sequences/Sleep2sec.yaml
   ↓CouchDb_schema [references.ImportXsdSchemaReference]: 

@@ -3,7 +3,19 @@
   comment: Mashup Sequencer project
   corsOrigin: =Origin
   jsonRoot: docNode
-  version: 2.1.2
+  version: 2.1.5
+  ↓databasea1 [connectors.FullSyncConnector]: 🗏 connectors/databasea1.yaml
+  ↓databasea2 [connectors.FullSyncConnector]: 🗏 connectors/databasea2.yaml
+  ↓databasea3 [connectors.FullSyncConnector]: 🗏 connectors/databasea3.yaml
+  ↓databaseb1 [connectors.FullSyncConnector]: 🗏 connectors/databaseb1.yaml
+  ↓databaseb2 [connectors.FullSyncConnector]: 🗏 connectors/databaseb2.yaml
+  ↓databaseb3 [connectors.FullSyncConnector]: 🗏 connectors/databaseb3.yaml
+  ↓databasec1 [connectors.FullSyncConnector]: 🗏 connectors/databasec1.yaml
+  ↓databasec2 [connectors.FullSyncConnector]: 🗏 connectors/databasec2.yaml
+  ↓databasec3 [connectors.FullSyncConnector]: 🗏 connectors/databasec3.yaml
+  ↓databased1 [connectors.FullSyncConnector]: 🗏 connectors/databased1.yaml
+  ↓databased2 [connectors.FullSyncConnector]: 🗏 connectors/databased2.yaml
+  ↓databased3 [connectors.FullSyncConnector]: 🗏 connectors/databased3.yaml
   ↓digiprev_fullsync_dataref [connectors.FullSyncConnector]: 🗏 connectors/digiprev_fullsync_dataref.yaml
   ↓qa_fs_files [connectors.FullSyncConnector]: 🗏 connectors/qa_fs_files.yaml
   ↓qa_fs_pull [connectors.FullSyncConnector]: 🗏 connectors/qa_fs_pull.yaml

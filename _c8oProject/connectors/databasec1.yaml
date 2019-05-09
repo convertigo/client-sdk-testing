@@ -1,0 +1,3 @@
+databaseName: databasec1
+↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
+  ↑default: true

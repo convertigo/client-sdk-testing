@@ -1,4 +1,12 @@
+↓Sequence_JS [steps.SimpleStep-1556119904825]: 
+  expression: |
+    //todo
+    log.debug("######### before ##########")
 ↓Remove_session [steps.RemoveSessionStep-1555083137320]: 
+↓Sequence_JS1 [steps.SimpleStep-1556120016659]: 
+  expression: |
+    //todo
+    log.debug("######### after ##########")
 ↓Set_response_header [steps.SetResponseHeaderStep-1556099633830]: 
   headerName: 
     - xmlizable: 
@@ -11,4 +19,4 @@
       - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
       - SmartType: 
         - ↑mode: PLAIN
-        - →→: JSESSIONID=deleted; path=/cems/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+        - →→: JSESSIONID=deleted; domain=c8o-dev.convertigo.net; path=/cems/; expires=Thu, 01 Jan 1970 00:00:00 GMT

@@ -1,0 +1,10 @@
+↓Call_Transaction [steps.TransactionStep-1557409013885]: 
+  sourceTransaction: ClientSDKtesting.databasec1.ResetDatabase
+↓Call_Transaction2 [steps.TransactionStep-1557410296384]: 
+  sourceTransaction: ClientSDKtesting.databasec1.PostDocument1
+  ↓_id [variables.StepVariable-1557410309244]: 
+    description: Document id
+    value: myID
+  ↓data [variables.StepVariable-1557410309246]: 
+    description: Document content
+    value: mydata

@@ -1,3 +1,13 @@
 databaseName: databasec1
 ↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
   ↑default: true
+↓PostDocument [transactions.couchdb.PostDocumentTransaction]: 
+  policy: override
+  ↓_use_json_base [variables.RequestableVariable-1557409509280]: 
+    description: (string) – JSON use as a base for the document (js object). Optional
+↓PostDocument1 [transactions.couchdb.PostDocumentTransaction]: 
+  ↓_id [variables.RequestableVariable-1557410281638]: 
+    description: Document id
+  ↓data [variables.RequestableVariable-1557410281640]: 
+    description: Document content
+↓ResetDatabase [transactions.couchdb.ResetDatabaseTransaction]: 

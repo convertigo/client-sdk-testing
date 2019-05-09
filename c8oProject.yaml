@@ -35,6 +35,7 @@
   ↓RemoveSession [sequences.GenericSequence]: 🗏 sequences/RemoveSession.yaml
   ↓SetInSession [sequences.GenericSequence]: 🗏 sequences/SetInSession.yaml
   ↓Sleep2sec [sequences.GenericSequence]: 🗏 sequences/Sleep2sec.yaml
+  ↓UpdateBaseVersion [sequences.GenericSequence]: 🗏 sequences/UpdateBaseVersion.yaml
   ↓CouchDb_schema [references.ImportXsdSchemaReference]: 
     urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd
   ↓lib_FileTransfer_reference [references.ProjectSchemaReference]: 

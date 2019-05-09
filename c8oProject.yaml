@@ -3,7 +3,7 @@
   comment: Mashup Sequencer project
   corsOrigin: =Origin
   jsonRoot: docNode
-  version: 2.1.5
+  version: 2.1.6
   ↓databasea1 [connectors.FullSyncConnector]: 🗏 connectors/databasea1.yaml
   ↓databasea2 [connectors.FullSyncConnector]: 🗏 connectors/databasea2.yaml
   ↓databasea3 [connectors.FullSyncConnector]: 🗏 connectors/databasea3.yaml

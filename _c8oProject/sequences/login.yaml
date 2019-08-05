@@ -1,0 +1,10 @@
+↓Set_authenticated_user [steps.SetAuthenticatedUserStep-1564761459977]: 
+  userid: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: PLAIN
+        - →→: salut
+↓Element [steps.XMLElementStep-1564761459980]: 
+  nodeName: ok
+  nodeText: true

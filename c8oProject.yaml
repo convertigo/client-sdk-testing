@@ -1,9 +1,9 @@
-↑convertigo: 7.6.0.m006
+↑convertigo: 7.7.0.m006
 ↓ClientSDKtesting [core.Project]: 
   comment: Mashup Sequencer project
   corsOrigin: =Origin
   jsonRoot: docNode
-  version: 2.1.6
+  version: 2.1.7
   ↓databasea1 [connectors.FullSyncConnector]: 🗏 connectors/databasea1.yaml
   ↓databasea2 [connectors.FullSyncConnector]: 🗏 connectors/databasea2.yaml
   ↓databasea3 [connectors.FullSyncConnector]: 🗏 connectors/databasea3.yaml
@@ -20,6 +20,8 @@
   ↓qa_fs_files [connectors.FullSyncConnector]: 🗏 connectors/qa_fs_files.yaml
   ↓qa_fs_pull [connectors.FullSyncConnector]: 🗏 connectors/qa_fs_pull.yaml
   ↓qa_fs_push [connectors.FullSyncConnector]: 🗏 connectors/qa_fs_push.yaml
+  ↓disconnect [sequences.GenericSequence]: 🗏 sequences/disconnect.yaml
+  ↓generatesError [sequences.GenericSequence]: 🗏 sequences/generatesError.yaml
   ↓GetAndInsertBase64 [sequences.GenericSequence]: 🗏 sequences/GetAndInsertBase64.yaml
   ↓GetFromSession [sequences.GenericSequence]: 🗏 sequences/GetFromSession.yaml
   ↓GetLogs [sequences.GenericSequence]: 🗏 sequences/GetLogs.yaml
@@ -28,6 +30,7 @@
   ↓InitFsPull [sequences.GenericSequence]: 🗏 sequences/InitFsPull.yaml
   ↓InitFsPush [sequences.GenericSequence]: 🗏 sequences/InitFsPush.yaml
   ↓JsonTypes [sequences.GenericSequence]: 🗏 sequences/JsonTypes.yaml
+  ↓login [sequences.GenericSequence]: 🗏 sequences/login.yaml
   ↓LoginTesting [sequences.GenericSequence]: 🗏 sequences/LoginTesting.yaml
   ↓LogoutTesting [sequences.GenericSequence]: 🗏 sequences/LogoutTesting.yaml
   ↓Ping [sequences.GenericSequence]: 🗏 sequences/Ping.yaml

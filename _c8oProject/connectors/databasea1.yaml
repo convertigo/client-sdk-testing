@@ -1,3 +1,4 @@
+anonymousReplication: deny
 databaseName: databasea1
 ↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
   ↑default: true

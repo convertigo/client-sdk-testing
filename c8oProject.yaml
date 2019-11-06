@@ -1,9 +1,11 @@
 ↑convertigo: 7.7.0.m006
 ↓ClientSDKtesting [core.Project]: 
   comment: Mashup Sequencer project
+  contextTimeout: 60
   corsOrigin: =Origin
+  httpSessionTimeout: 60
   jsonRoot: docNode
-  version: 2.1.7
+  version: 2.1.8
   ↓databasea1 [connectors.FullSyncConnector]: 🗏 connectors/databasea1.yaml
   ↓databasea2 [connectors.FullSyncConnector]: 🗏 connectors/databasea2.yaml
   ↓databasea3 [connectors.FullSyncConnector]: 🗏 connectors/databasea3.yaml

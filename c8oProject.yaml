@@ -5,7 +5,7 @@
   corsOrigin: =Origin
   httpSessionTimeout: 60
   jsonRoot: docNode
-  version: 2.1.8
+  version: 2.1.9
   ↓databasea1 [connectors.FullSyncConnector]: 🗏 connectors/databasea1.yaml
   ↓databasea2 [connectors.FullSyncConnector]: 🗏 connectors/databasea2.yaml
   ↓databasea3 [connectors.FullSyncConnector]: 🗏 connectors/databasea3.yaml

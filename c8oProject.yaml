@@ -34,6 +34,7 @@
   ↓JsonTypes [sequences.GenericSequence]: 🗏 sequences/JsonTypes.yaml
   ↓login [sequences.GenericSequence]: 🗏 sequences/login.yaml
   ↓LoginTesting [sequences.GenericSequence]: 🗏 sequences/LoginTesting.yaml
+  ↓logout [sequences.GenericSequence]: 🗏 sequences/logout.yaml
   ↓LogoutTesting [sequences.GenericSequence]: 🗏 sequences/LogoutTesting.yaml
   ↓Ping [sequences.GenericSequence]: 🗏 sequences/Ping.yaml
   ↓PrepareDownload4M [sequences.GenericSequence]: 🗏 sequences/PrepareDownload4M.yaml

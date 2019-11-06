@@ -30,4 +30,28 @@ databaseName: qa_fs_pull
       '
 ↓design [couchdb.DesignDocument]: 
   docdata: 
-    →: '{"_id":"_design\/design","filters":{},"updates":{},"views":{"reverse":{"map":"function (doc) {\r\n\ttry {\r\n\t\temit(doc._id.split(\"\").reverse().join(\"\"), doc.data * 1);\r\n\t} catch (err) {\r\n\t\tlog(err.message);\r\n\t}\r\n}","reduce":"_sum"},"array":{"map":"function (doc) {\r\n\ttry {\r\n\t\temit([\"\" + (doc._id[0] % 2), \"\" + (doc._id[1] % 3), doc._id], doc.data * 1);\r\n\t} catch (err) {\r\n\t\tlog(err.message);\r\n\t}\r\n}"}}}'
+    →: |
+      '{
+        "_id": "_design\/design",
+        "filters": {},
+        "updates": {},
+        "views": {
+          "reverse": {
+            "map": "function (doc) {\r\n
+          try {\r\n
+              emit(doc._id.split(\"\").reverse().join(\"\"), doc.data * 1);\r\n
+          } catch (err) {\r\n
+              log(err.message);\r\n
+          }\r\n
+      }",
+            "reduce": "_sum"
+          },
+          "array": {"map": "function (doc) {\r\n
+          try {\r\n
+              emit([\"\" + (doc._id[0] % 2), \"\" + (doc._id[1] % 3), doc._id], doc.data * 1);\r\n
+          } catch (err) {\r\n
+              log(err.message);\r\n
+          }\r\n
+      }"}
+        }
+      }'
